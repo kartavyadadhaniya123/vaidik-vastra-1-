@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAIDIK VASTRAM | Royal Men's Clothing Store & Wedding Studio, Morbi</title>
+  <meta name="description" content="Morbi's premier Men's Clothing Store for wedding sherwanis, festive kurta sets, royal bandhgalas, and tuxedos. Handcrafted bespoke tailoring with in-store trial and direct WhatsApp checkout.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Gujarati:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Three.js & GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Clean White & Brown Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Strip -->
+  <div class="top-strip">
+    <span>📍 <strong>Morbi Studio:</strong> Shop 205, 2nd Floor, Siddhivinayak Circle, Ravapar Rd</span>
+    <span>⭐ <strong>5.0 / 5.0</strong> Rated on Google Reviews</span>
+    <span>📞 Call / WhatsApp: <a href="tel:09925278018">099252 78018</a></span>
+  </div>
+
+  <!-- Smooth Floating Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Logo -->
+        <a href="#hero" class="brand-block">
+          <div class="brand-crest">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="brand-name">VAIDIK VASTRAM</div>
+            <div class="brand-sub">વૈદિક વસ્ત્રમ્ • MEN'S CLOTHING STORE</div>
+          </div>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu">
+          <li><a href="#hero" class="active">3D Visualizer</a></li>
+          <li><a href="#shop-collection">Shop Collection</a></li>
+          <li><a href="#about-us">Book Trial & About</a></li>
+          <li><a href="#reviews">Google Reviews (5.0★)</a></li>
+          <li><a href="#location">Store Location</a></li>
+        </ul>
+
+        <!-- Connected "My Bag" Button & Trial CTA -->
+        <div class="nav-cta-group">
+          <!-- Connected Cart Button with Text and Badge -->
+          <button class="cart-btn-connected" id="cart-toggle-btn" onclick="window.storeApp && window.storeApp.openCart()" title="View your shopping bag">
+            <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+            </svg>
+            <span>My Bag</span>
+            <span class="cart-count-pill" id="cart-item-count">0</span>
+          </button>
+
+          <!-- Book Trial connected to About Us & Form -->
+          <a href="#about-us" class="btn btn-brown-solid" data-open-modal style="padding: 10px 18px;">
+            Book Trial
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with 360° Moving 3D Model -->
+  <section id="hero" class="hero-clean-section">
+    <div class="container">
+      <div class="hero-layout-grid">
+        <!-- Left Hero Text -->
+        <div class="hero-text-side">
+          <div class="luxury-badge gold-sheen">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <span>Morbi's 5.0★ Rated Wedding Destination</span>
+          </div>
+
+          <h1 class="hero-big-title">
+            Bespoke Indian Luxury.
+            <span class="brown-gradient-text">Designed for Grooms.</span>
+          </h1>
+
+          <p class="hero-desc-para">
+            Step into <strong>VAIDIK VASTRAM</strong> on Ravapar Road. Explore master-tailored royal wedding sherwanis, festive kurta sets, velvet bandhgalas, and tuxedos with pure zari artistry at honest local pricing.
+          </p>
+
+          <div style="display:flex; gap:14px; flex-wrap:wrap; margin-bottom: 30px;">
+            <a href="#shop-collection" class="btn btn-brown-solid">
+              <span>Explore Collection</span>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#about-us" class="btn btn-outline-brown">
+              <span>Book In-Store Trial</span>
+            </a>
+          </div>
+
+          <!-- Highlights Row -->
+          <div style="display:flex; gap:24px; flex-wrap:wrap; padding-top:20px; border-top:1px solid var(--border-subtle);">
+            <div>
+              <span style="color:var(--brown-deep); font-weight:800; font-size:1.2rem; display:block;">100% Bespoke</span>
+              <span style="font-size:0.78rem; color:var(--text-muted);">Custom Tailored Fit</span>
+            </div>
+            <div>
+              <span style="color:var(--brown-deep); font-weight:800; font-size:1.2rem; display:block;">5.0 ★ Rating</span>
+              <span style="font-size:0.78rem; color:var(--text-muted);">10 Google Reviews</span>
+            </div>
+            <div>
+              <span style="color:var(--brown-deep); font-weight:800; font-size:1.2rem; display:block;">Ravapar Rd</span>
+              <span style="font-size:0.78rem; color:var(--text-muted);">Morbi Showroom</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 3D Model with 360° Moving Effect -->
+        <div class="model-3d-box" id="canvas-container">
+          <div class="model-3d-overlay-top">
+            <span class="luxury-badge" style="background:rgba(255,255,255,0.92); box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>3D 360° ROTATING MODEL</span>
+            </span>
+          </div>
+
+          <!-- Three.js Canvas -->
+          <canvas id="canvas-3d"></canvas>
+
+          <!-- 3D Swatches & 360° Hint -->
+          <div class="model-3d-overlay-bottom">
+            <div>
+              <span style="font-size:0.72rem; color:var(--brown-tan); text-transform:uppercase; letter-spacing:1px; display:block; margin-bottom:4px; font-weight:700;">
+                Fabric Tone
+              </span>
+              <div class="swatch-group">
+                <button class="swatch-btn active" data-color="brown" style="background:#3d2317;" title="Royal Chocolate Brown"></button>
+                <button class="swatch-btn" data-color="ivory" style="background:#f5eedf;" title="Imperial Ivory Silk"></button>
+                <button class="swatch-btn" data-color="saffron" style="background:#bf4817;" title="Festive Saffron Silk"></button>
+                <button class="swatch-btn" data-color="emerald" style="background:#134e3d;" title="Royal Deep Emerald"></button>
+              </div>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+              <span>Drag to spin 360°</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Collection Section with WORKING Search Bar -->
+  <section id="shop-collection" class="shop-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-label">CURATED FOR GROOMS & FESTIVALS</span>
+        <h2 class="section-heading">Shop Our Wedding Collection</h2>
+        <p class="section-subtitle">
+          Search, select your size, and add to your bag or click <strong>Buy Now</strong> for instant WhatsApp ordering.
+        </p>
+      </div>
+
+      <!-- Working Search Bar & Filters -->
+      <div class="search-filter-toolbar">
+        <div class="search-input-wrapper">
+          <svg class="search-icon-left" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input type="text" id="product-search-input" class="search-input-field" placeholder="Search by name, fabric, or style (e.g. Sherwani, Kurta, Velvet)...">
+          <button id="search-clear-btn" class="search-clear-btn" title="Clear search">&times;</button>
+        </div>
+
+        <!-- Category Chips -->
+        <div class="category-chips-scroll">
+          <button class="chip-filter-btn active" data-cat="all">All Styles</button>
+          <button class="chip-filter-btn" data-cat="sherwani">Wedding Sherwanis</button>
+          <button class="chip-filter-btn" data-cat="kurta">Festive Kurta Sets</button>
+          <button class="chip-filter-btn" data-cat="indo-western">Indo-Western</button>
+          <button class="chip-filter-btn" data-cat="bandhgala">Royal Bandhgalas</button>
+          <button class="chip-filter-btn" data-cat="tuxedo">Tuxedos & Blazers</button>
+          <button class="chip-filter-btn" data-cat="accessories">Accessories</button>
+        </div>
+
+        <!-- Real-time Search Status Message -->
+        <div id="search-status-bar" class="search-status-bar">
+          Showing all 8 handpicked outfits
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-display-grid">
+
+        <!-- Product 1: Royal Banarasi Zari Sherwani -->
+        <div class="product-white-card" data-id="p1" data-category="sherwani" data-title="Royal Banarasi Zari Sherwani" data-price="24999" data-img="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=600&q=80" alt="Royal Banarasi Zari Sherwani" loading="lazy">
+            <span class="product-cat-tag">Wedding Sherwani</span>
+            <span class="product-badge-accent">BESTSELLER</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Royal Banarasi Zari Sherwani</h3>
+            <p class="product-card-desc">Intricate hand-embroidered resham and zari dabka work on pure brocade silk.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item" data-size="M">M</div>
+              <div class="size-pill-item active" data-size="L">L</div>
+              <div class="size-pill-item" data-size="XL">XL</div>
+              <div class="size-pill-item" data-size="XXL">XXL</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹24,999</div>
+              <div class="product-cut-price">₹35,000</div>
+              <div class="product-discount-label">28% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Imperial Ivory Chikankari Sherwani -->
+        <div class="product-white-card" data-id="p2" data-category="sherwani" data-title="Imperial Ivory Chikankari Sherwani" data-price="18500" data-img="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=600&q=80" alt="Imperial Ivory Chikankari Sherwani" loading="lazy">
+            <span class="product-cat-tag">Groom Special</span>
+            <span class="product-badge-accent">NEW</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Imperial Ivory Chikankari Sherwani</h3>
+            <p class="product-card-desc">Lucknowi thread embroidery on soft pure georgette with subtle sequence highlights.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item" data-size="M">M</div>
+              <div class="size-pill-item active" data-size="L">L</div>
+              <div class="size-pill-item" data-size="XL">XL</div>
+              <div class="size-pill-item" data-size="XXL">XXL</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹18,500</div>
+              <div class="product-cut-price">₹26,000</div>
+              <div class="product-discount-label">29% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Emerald Velvet Jodhpuri Bandhgala -->
+        <div class="product-white-card" data-id="p3" data-category="bandhgala" data-title="Emerald Velvet Jodhpuri Suit" data-price="14500" data-img="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Emerald Velvet Jodhpuri Suit" loading="lazy">
+            <span class="product-cat-tag">Royal Bandhgala</span>
+            <span class="product-badge-accent">HERITAGE</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Emerald Velvet Jodhpuri Suit</h3>
+            <p class="product-card-desc">Deep jewel emerald velvet jacket tailored with custom engraved golden metal buttons.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item" data-size="38">38</div>
+              <div class="size-pill-item active" data-size="40">40</div>
+              <div class="size-pill-item" data-size="42">42</div>
+              <div class="size-pill-item" data-size="44">44</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹14,500</div>
+              <div class="product-cut-price">₹20,000</div>
+              <div class="product-discount-label">27% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Festive Mirror-Work Kurta Koti Set -->
+        <div class="product-white-card" data-id="p4" data-category="kurta" data-title="Mirror-Work Kurta Koti Set" data-price="4999" data-img="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=600&q=80" alt="Mirror-Work Kurta Koti Set" loading="lazy">
+            <span class="product-cat-tag">Haldi & Sangeet</span>
+            <span class="product-badge-accent">POPULAR</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Mirror-Work Kurta Koti Set</h3>
+            <p class="product-card-desc">Warm yellow silk blend kurta pajama paired with a handcrafted mirror-work festive jacket.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item" data-size="M">M</div>
+              <div class="size-pill-item active" data-size="L">L</div>
+              <div class="size-pill-item" data-size="XL">XL</div>
+              <div class="size-pill-item" data-size="XXL">XXL</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹4,999</div>
+              <div class="product-cut-price">₹7,500</div>
+              <div class="product-discount-label">33% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Asymmetric Cut Indo-Western -->
+        <div class="product-white-card" data-id="p5" data-category="indo-western" data-title="Asymmetric Cut Indo-Western" data-price="7499" data-img="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=600&q=80" alt="Asymmetric Cut Indo-Western" loading="lazy">
+            <span class="product-cat-tag">Indo-Western</span>
+            <span class="product-badge-accent">FUSION</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Asymmetric Cut Indo-Western</h3>
+            <p class="product-card-desc">Modern diagonal overlap placket styling with structured drape and tailored trousers.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item" data-size="M">M</div>
+              <div class="size-pill-item active" data-size="L">L</div>
+              <div class="size-pill-item" data-size="XL">XL</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹7,499</div>
+              <div class="product-cut-price">₹11,000</div>
+              <div class="product-discount-label">31% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Classic Pure Silk Kurta Pajama -->
+        <div class="product-white-card" data-id="p6" data-category="kurta" data-title="Classic Pure Silk Kurta Pajama" data-price="2499" data-img="https://images.unsplash.com/photo-1627916607164-7b20241db935?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1627916607164-7b20241db935?auto=format&fit=crop&w=600&q=80" alt="Classic Pure Silk Kurta Pajama" loading="lazy">
+            <span class="product-cat-tag">Daily & Festive</span>
+            <span class="product-badge-accent">ESSENTIAL</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Classic Silk Kurta Pajama</h3>
+            <p class="product-card-desc">Lustrous breathable art-silk fabric with subtle texture and comfortable side pockets.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item" data-size="M">M</div>
+              <div class="size-pill-item active" data-size="L">L</div>
+              <div class="size-pill-item" data-size="XL">XL</div>
+              <div class="size-pill-item" data-size="XXL">XXL</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹2,499</div>
+              <div class="product-cut-price">₹3,999</div>
+              <div class="product-discount-label">37% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: Satin-Lapel Groom Tuxedo -->
+        <div class="product-white-card" data-id="p7" data-category="tuxedo" data-title="Royal Satin-Lapel Groom Tuxedo" data-price="16999" data-img="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80" alt="Royal Satin-Lapel Groom Tuxedo" loading="lazy">
+            <span class="product-cat-tag">Reception Wear</span>
+            <span class="product-badge-accent">PREMIUM</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Satin-Lapel Groom Tuxedo</h3>
+            <p class="product-card-desc">3-Piece Italian cut formal suit with satin shawl lapel, matching waistcoat, and formal bow.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item" data-size="38">38</div>
+              <div class="size-pill-item active" data-size="40">40</div>
+              <div class="size-pill-item" data-size="42">42</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹16,999</div>
+              <div class="product-cut-price">₹24,000</div>
+              <div class="product-discount-label">29% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8: Chanderi Royal Safa & Kalgi -->
+        <div class="product-white-card" data-id="p8" data-category="accessories" data-title="Chanderi Royal Safa & Kalgi Set" data-price="2999" data-img="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Chanderi Royal Safa & Kalgi Set" loading="lazy">
+            <span class="product-cat-tag">Accessories</span>
+            <span class="product-badge-accent">ROYAL</span>
+          </div>
+          <div class="product-details-box">
+            <h3 class="product-card-title">Chanderi Royal Safa & Kalgi</h3>
+            <p class="product-card-desc">Pre-tied royal turban with handcrafted kundan feather brooch and multi-layer pearl tassel.</p>
+
+            <div class="size-selection-strip">
+              <span class="size-pill-label">Size:</span>
+              <div class="size-pill-item active" data-size="Free Size">Free Size</div>
+            </div>
+
+            <div class="product-price-row">
+              <div class="product-current-price">₹2,999</div>
+              <div class="product-cut-price">₹4,500</div>
+              <div class="product-discount-label">33% OFF</div>
+            </div>
+
+            <div class="card-action-buttons">
+              <button class="btn btn-outline-brown" data-add-to-cart onclick="window.storeApp && window.storeApp.handleAddToCart(this)" style="padding:10px; font-size:0.84rem;">
+                + Add to Bag
+              </button>
+              <button class="btn btn-brown-solid" data-buy-now style="padding:10px; font-size:0.84rem;">
+                Buy Now ⚡
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us & In-Store Trial Room Section -->
+  <section id="about-us" class="about-showroom-section">
+    <div class="container">
+      <div class="about-card-box">
+        <div class="store-meta-grid">
+          <!-- Left: About Information -->
+          <div>
+            <span class="section-label">ABOUT VAIDIK VASTRAM</span>
+            <h2 style="font-family:var(--font-display); font-size:2.2rem; color:var(--brown-deep); margin-bottom:14px; font-weight:800;">
+              Morbi's Premier Groom Studio
+            </h2>
+            <p style="color:var(--text-secondary); font-size:0.98rem; margin-bottom:22px; line-height:1.7;">
+              Located on Ravapar Road opposite Swagat Arcade, <strong>VAIDIK VASTRAM</strong> was created with a singular focus: delivering bespoke wedding craftsmanship, perfect fittings, and royal finishes for Saurashtra's grooms.
+            </p>
+
+            <!-- Key Details -->
+            <div class="detail-row-item">
+              <div class="detail-row-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <strong style="color:var(--brown-deep); display:block; font-size:0.94rem;">Exact Showroom Address:</strong>
+                <span style="font-size:0.88rem; color:var(--text-muted);">
+                  SECOND FLOOR, SHOP NO 205, SIDDHIVINAYAK CIRCLE, LANDMARK 26,<br>
+                  Ravapar Rd, opp. SWAGAT ARCADE, CHOWKDY, Ravapar, Morbi, Gujarat 363641
+                </span>
+              </div>
+            </div>
+
+            <div class="detail-row-item">
+              <div class="detail-row-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <strong style="color:var(--brown-deep); display:block; font-size:0.94rem;">Direct Call / WhatsApp:</strong>
+                <a href="tel:09925278018" style="color:var(--brown-warm); font-weight:700; text-decoration:none;">099252 78018</a>
+              </div>
+            </div>
+
+            <div class="detail-row-item">
+              <div class="detail-row-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </div>
+              <div>
+                <strong style="color:var(--brown-deep); display:block; font-size:0.94rem;">Hours:</strong>
+                <span style="color:#15803d; font-weight:600; font-size:0.88rem;">Open 9:30 AM onwards daily</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Book Trial Form -->
+          <div style="background:var(--bg-page); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:32px;">
+            <div class="luxury-badge" style="margin-bottom:12px;">SCHEDULE FITTING</div>
+            <h3 style="font-family:var(--font-display); font-size:1.6rem; color:var(--brown-deep); margin-bottom:8px;">
+              Book In-Store Trial
+            </h3>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:20px;">
+              Reserve your private fitting appointment with our master tailor at our Morbi showroom.
+            </p>
+
+            <form id="trial-booking-form">
+              <div style="margin-bottom:14px;">
+                <label style="display:block; font-size:0.82rem; color:var(--brown-deep); font-weight:700; margin-bottom:5px;">Your Name</label>
+                <input type="text" id="client-name" class="search-input-field" style="background:#fff; border-radius:8px; padding:11px 14px;" placeholder="e.g. Priyank Patel" required>
+              </div>
+
+              <div style="margin-bottom:14px;">
+                <label style="display:block; font-size:0.82rem; color:var(--brown-deep); font-weight:700; margin-bottom:5px;">WhatsApp Number</label>
+                <input type="tel" id="client-phone" class="search-input-field" style="background:#fff; border-radius:8px; padding:11px 14px;" placeholder="e.g. 099252 78018" required>
+              </div>
+
+              <div style="margin-bottom:20px;">
+                <label style="display:block; font-size:0.82rem; color:var(--brown-deep); font-weight:700; margin-bottom:5px;">Outfit of Interest</label>
+                <select id="outfit-type" class="search-input-field" style="background:#fff; border-radius:8px; padding:11px 14px;">
+                  <option value="Wedding Sherwani">Royal Wedding Sherwani</option>
+                  <option value="Jodhpuri Bandhgala">Jodhpuri Bandhgala Suit</option>
+                  <option value="Festive Kurta Koti Set">Festive Kurta Koti Set</option>
+                  <option value="Tuxedo / Reception Suit">Tuxedo / Reception Suit</option>
+                  <option value="Accessories (Safa/Kalgi/Mojari)">Accessories (Safa/Kalgi/Mojari)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-whatsapp-modern" style="width:100%; padding:13px; font-size:0.95rem;">
+                <span>Confirm Trial on WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google 5.0 Star Reviews Section -->
+  <section id="reviews" class="reviews-clean-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-label">GOOGLE MAPS REVIEWS</span>
+        <h2 class="section-heading">Loved by Grooms in Morbi</h2>
+        <div style="display:inline-flex; align-items:center; gap:8px; background:var(--bg-cream); border:1px solid var(--border-subtle); padding:6px 16px; border-radius:50px; margin-top:6px;">
+          <span style="font-size:1.15rem; color:#b8860b; font-weight:800;">5.0 ★★★★★</span>
+          <span style="font-size:0.84rem; color:var(--brown-deep); font-weight:600;">10 Verified Google Reviews</span>
+        </div>
+      </div>
+
+      <div class="reviews-cards-row">
+        <!-- Review 1 -->
+        <div class="review-white-box">
+          <div style="color:#b8860b; font-size:1.1rem; margin-bottom:10px;">★★★★★</div>
+          <p style="font-style:italic; font-size:0.95rem; color:var(--text-secondary); margin-bottom:16px;">
+            "This is a only one shop and good collection for wedding cloths in Morbi. Best fitting and genuine pricing!"
+          </p>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div style="width:40px; height:40px; border-radius:50%; background:var(--brown-deep); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700;">R</div>
+            <div>
+              <h4 style="font-size:0.92rem; color:var(--brown-deep);">Rudra Vasaniya</h4>
+              <span style="font-size:0.75rem; color:var(--text-light);">Google Verified Review</span>
+            </div>
+          </div>
+          <div style="margin-top:12px; padding:8px 12px; background:var(--bg-cream); border-left:3px solid var(--brown-deep); font-size:0.78rem; color:var(--brown-deep);">
+            <strong>Owner Reply:</strong> "Thank you for trusting us for your wedding clothes!"
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-white-box">
+          <div style="color:#b8860b; font-size:1.1rem; margin-bottom:10px;">★★★★★</div>
+          <p style="font-style:italic; font-size:0.95rem; color:var(--text-secondary); margin-bottom:16px;" class="font-gujarati">
+            "Outfit srs che! Wedding sherwani and kurta collection khub j royal che. Highly recommended!"
+          </p>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div style="width:40px; height:40px; border-radius:50%; background:var(--brown-deep); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700;">P</div>
+            <div>
+              <h4 style="font-size:0.92rem; color:var(--brown-deep);">Priyank Vagadiya</h4>
+              <span style="font-size:0.75rem; color:var(--text-light);">4 reviews • Morbi</span>
+            </div>
+          </div>
+          <div style="margin-top:12px; padding:8px 12px; background:var(--bg-cream); border-left:3px solid var(--brown-deep); font-size:0.78rem; color:var(--brown-deep);">
+            <strong>Owner Reply:</strong> "Thank you so much!"
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-white-box">
+          <div style="color:#b8860b; font-size:1.1rem; margin-bottom:10px;">★★★★★</div>
+          <p style="font-style:italic; font-size:0.95rem; color:var(--text-secondary); margin-bottom:16px;">
+            "Good quality fabric and royal finishing. Friendly staff and budget-friendly pricing compared to metros."
+          </p>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div style="width:40px; height:40px; border-radius:50%; background:var(--brown-deep); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700;">V</div>
+            <div>
+              <h4 style="font-size:0.92rem; color:var(--brown-deep);">Vansdadiya Ravi</h4>
+              <span style="font-size:0.75rem; color:var(--text-light);">4 reviews • 12 photos</span>
+            </div>
+          </div>
+          <div style="margin-top:12px; padding:8px 12px; background:var(--bg-cream); border-left:3px solid var(--brown-deep); font-size:0.78rem; color:var(--brown-deep);">
+            <strong>Owner Reply:</strong> "Thank you Ravi bhai!"
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map Section -->
+  <section id="location" style="padding: 60px 0 80px; background:var(--bg-surface); border-top:1px solid var(--border-hairline);">
+    <div class="container">
+      <div style="border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-subtle); box-shadow:var(--shadow-card); min-height:400px;">
+        <iframe 
+          src="https://maps.google.com/maps?q=Ravapar+Rd,+opp.+SWAGAT+ARCADE,+Morbi,+Gujarat+363641&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+          style="width:100%; height:100%; min-height:400px; border:0;"
+          loading="lazy"
+          title="Vaidik Vastram Morbi Map"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide-in "My Bag" Cart Drawer -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-overlay">
+    <div class="cart-sliding-panel">
+      <div class="cart-top-bar">
+        <div>
+          <h3 style="font-family:var(--font-display); font-size:1.35rem; color:var(--brown-deep); font-weight:800;">Your Shopping Bag</h3>
+          <span style="font-size:0.75rem; color:var(--brown-tan); font-weight:700;">VAIDIK VASTRAM MORBI</span>
+        </div>
+        <button id="close-cart-btn" style="background:none; border:none; color:var(--text-muted); font-size:1.6rem; cursor:pointer;" title="Close Bag">&times;</button>
+      </div>
+
+      <!-- Scrollable Cart Items Container -->
+      <div class="cart-items-scroll-area" id="cart-items-container">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Checkout Section -->
+      <div class="cart-bottom-checkout">
+        <div style="display:flex; justify-content:space-between; margin-bottom:6px; font-size:0.88rem; color:var(--text-muted);">
+          <span>Showroom Fitting / Pickup</span>
+          <span style="color:#15803d; font-weight:700;">FREE in Morbi</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:baseline; margin:10px 0 16px; padding-top:10px; border-top:1px solid var(--border-subtle);">
+          <span style="font-size:1.1rem; font-weight:700; color:var(--brown-deep);">Subtotal:</span>
+          <span id="cart-grand-total" style="font-family:var(--font-display); font-size:1.55rem; font-weight:800; color:var(--brown-deep);">₹0</span>
+        </div>
+
+        <button class="btn btn-whatsapp-modern" id="cart-whatsapp-checkout-btn" style="width:100%; padding:14px; font-size:0.98rem;">
+          <span>Checkout via WhatsApp</span>
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <div style="font-size:0.72rem; color:var(--text-light); text-align:center; margin-top:8px;">
+          Direct order confirmation to <strong>099252 78018</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Actions -->
+  <div class="floating-actions-clean">
+    <a href="https://wa.me/919925278018?text=Namaste%20Vaidik%20Vastram,%20I%20want%20to%20inquire%20about%20your%20wedding%20wear%20collection" target="_blank" class="fab-btn fab-wa" title="WhatsApp Showroom">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.21 8.21 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.35.06-.53.25-.19.19-.71.69-.71 1.69 0 1 .73 1.96.83 2.1.1.13 1.44 2.2 3.49 3.08.49.21.87.33 1.16.43.49.15.93.13 1.29.08.39-.06 1.21-.49 1.38-.97.17-.48.17-.89.12-.97-.05-.08-.19-.13-.4-.23s-1.21-.6-1.4-.67c-.19-.06-.32-.1-.46.1-.13.19-.53.67-.65.81-.12.13-.25.15-.45.05-.21-.1-88-.32-1.67-1.03-.62-.55-1.04-1.24-1.16-1.45-.12-.21-.01-.32.09-.42.09-.09.21-.25.32-.37.1-.13.14-.21.21-.36.07-.15.03-.28-.02-.38-.05-.1-.46-1.11-.63-1.52-.17-.41-.34-.35-.46-.36l-.39-.01z"/></svg>
+    </a>
+    <a href="tel:09925278018" class="fab-btn fab-tel" title="Call Showroom">
+      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    </a>
+  </div>
+
+  <!-- Clean Footer -->
+  <footer style="background:var(--brown-deep); color:var(--bg-cream); padding:50px 0 25px; font-size:0.86rem;">
+    <div class="container" style="text-align:center;">
+      <div style="font-family:var(--font-serif); font-size:1.45rem; color:#fff; font-weight:800; margin-bottom:8px;">
+        VAIDIK VASTRAM
+      </div>
+      <p style="color:var(--bg-sand); margin-bottom:18px;">
+        વૈદિક વસ્ત્રમ્ • 205 Siddhivinayak Circle, Ravapar Rd, opp. Swagat Arcade, Morbi 363641 • 📞 099252 78018
+      </p>
+      <div style="padding-top:16px; border-top:1px solid rgba(255,255,255,0.08); font-size:0.78rem; color:var(--brown-tan);">
+        © 2026 VAIDIK VASTRAM. Crafted with elegant White & Brown bespoke aesthetic.
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
